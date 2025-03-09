@@ -1,12 +1,12 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 const UserLogin = () => {
   const submitHandaler =(e)=>{
     e.preventDefault()
     setEmail('')
     setPassword('')
-    
+   
   }
   
   const [email, setEmail] = useState("")
@@ -48,11 +48,12 @@ const UserLogin = () => {
        />
        
        <input type="submit"
+      
        className="mt-5  p-2 bg-zinc-900 text-white text-center text-xl  rounded " value="Login"/>
     <div className="flex items-center justify-center mt-2"  >
         <span>New hare?</span><Link to='/user-singup' className="ml-1 text-blue-600"> Create new account</Link>
     </div>
-    <Link to='/driver-login' className="mr-64  p-2 bg-green-500 text-white text-center text-xl  rounded absolute bottom-5  w-[90%]">Login as Driver</Link>
+    <Link to='/driver-login' className="mr-64 cursor-pointer p-2 bg-green-500 text-white text-center text-xl  rounded absolute bottom-5  w-[90%]">Login as Driver</Link>
       </form>
     
     </div>

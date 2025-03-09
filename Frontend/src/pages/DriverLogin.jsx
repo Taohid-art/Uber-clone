@@ -52,7 +52,7 @@ const DriverLogin = () => {
     <div className="flex items-center justify-center mt-2"  >
         <span>New hare?</span><Link to='/driver-singup' className="ml-1 text-blue-600"> Create new account</Link>
     </div>
-    <Link to='/' className="mr-64  p-2 bg-green-500 text-white text-center text-xl  rounded absolute bottom-5  w-[90%]">Login as User</Link>
+    <Link to='/' className="mr-64 cursor-pointer p-2 bg-green-500 text-white text-center text-xl  rounded absolute bottom-5  w-[90%]">Login as User</Link>
       </form>
     
     </div>

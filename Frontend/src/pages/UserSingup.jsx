@@ -10,7 +10,7 @@ const UserSingup = () => {
     const submitHandaler =(e)=>{
     e.preventDefault()
    setUserdata({
-    username:{
+    fullname:{
       firstname:firstname,
       lastname:lastname,
     },
@@ -91,7 +91,7 @@ const UserSingup = () => {
     <div className="flex items-center justify-center mt-2"  >
         <span>Already have a account</span><Link to='/' className="ml-1 text-blue-600"> Login</Link>
     </div>
-    <Link to='/driver-singup' className="mr-64  p-2 bg-green-500 text-white text-center text-xl  rounded absolute bottom-5  w-[90%]">Singup as Driver</Link>
+    <Link to='/driver-singup' className="mr-64 cursor-pointer p-2 bg-green-500 text-white text-center text-xl  rounded absolute bottom-5  w-[90%]">Singup as Driver</Link>
       </form>
     
     </div>
