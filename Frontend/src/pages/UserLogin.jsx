@@ -47,9 +47,9 @@ const UserLogin = () => {
         className=" mt-2  bg-gray-100 text-lg p-2.5 rounded outline-none"
        />
        
-       <input type="submit"
+       <Link className="mt-5  p-2 bg-zinc-900 text-white text-center text-xl  rounded " to="/home"><input type="submit"
       
-       className="mt-5  p-2 bg-zinc-900 text-white text-center text-xl  rounded " value="Login"/>
+        value="Login"/></Link>
     <div className="flex items-center justify-center mt-2"  >
         <span>New hare?</span><Link to='/user-singup' className="ml-1 text-blue-600"> Create new account</Link>
     </div>
